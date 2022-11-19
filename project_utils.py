@@ -41,11 +41,3 @@ class Transformer:
         logging.debug("transformer_output completed")
         print(y)
         return y
-    
-    
-if __name__ =="__main__":
-    trans = Transformer()
-    np.random.seed(0)
-    y = trans.predict(np.random.random((1,3)))
-    print(y)
-    

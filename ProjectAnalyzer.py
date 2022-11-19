@@ -20,11 +20,3 @@ class ProjectAnalyzer:
         out = SeldonResponse(data=output)
         logging.debug("ProjectAnalyzer SeldonResponse completed")
         return out
-    
-    
-    
-if __name__ =="__main__":
-    import numpy as np
-    x = np.random.random((3,5))
-    m = ProjectAnalyzer()
-    m.predict() 
