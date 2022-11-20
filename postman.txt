@@ -1,0 +1,16 @@
+localhost:9001/api/v1.0/predictions
+
+{
+    "data": {
+        "name": [
+            "feature1"
+        ],
+        "ndarray": [
+            [
+                1,
+                2,
+                4
+            ]
+        ]
+    }
+}

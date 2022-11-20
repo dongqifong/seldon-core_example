@@ -36,6 +36,7 @@ if __name__ == "__main__":
     m = TorchModel()
     joblib.dump(m,"./model/torch_model.joblib")
     x = np.random.random((1,3))
+    x = np.array([[1,2,4]])
 
     y = m.predict(x)
     print(y) # [0.50667244]
@@ -43,8 +44,3 @@ if __name__ == "__main__":
     model = joblib.load("./model/torch_model.joblib")
     y_model = model.predict(x)
     print(y_model) # [0.50667244]
-
-    # %%
-    import matplotlib.pyplot as plt
-    plt.plot(range(10,-1))
-    plt.show()
